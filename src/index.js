@@ -19,7 +19,7 @@ if (body.getAttribute('class') === Theme.DARK) {
 themeChangeToogle.checked;
 };
 
-themeChangeToogle.addEventListener('change', (foo) => {
+themeChangeToogle.addEventListener('change', () => {
   if (body.classList.contains(Theme.LIGHT)) {
     body.classList.replace(Theme.LIGHT, Theme.DARK)
     let saveId = Theme.DARK;
